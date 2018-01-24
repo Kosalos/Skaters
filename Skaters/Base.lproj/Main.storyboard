@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="Skaters" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5bk-qv-lcH" customClass="SCNView">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="20" maxValue="500" translatesAutoresizingMaskIntoConstraints="NO" id="UgC-qt-5EH">
+                                <rect key="frame" x="18" y="1296" width="206" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="202" id="O4Z-2D-Pba"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="scaleSliderChanged:" destination="BV1-FR-VrT" eventType="valueChanged" id="SgQ-Xg-3gY"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do Not Touch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3o-YF-Wto">
+                                <rect key="frame" x="20" y="1274" width="72" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="20" maxValue="500" translatesAutoresizingMaskIntoConstraints="NO" id="U3e-hq-lev">
+                                <rect key="frame" x="261" y="1296" width="206" height="31"/>
+                                <connections>
+                                    <action selector="scale2FactorChanged:" destination="BV1-FR-VrT" eventType="valueChanged" id="JM9-9Y-2Kc"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Mq-9S-V99">
+                                <rect key="frame" x="487" y="1296" width="39" height="30"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="fBN-JM-JVG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="la0-sO-7op">
+                                <rect key="frame" x="567" y="1296" width="43" height="30"/>
+                                <state key="normal" title="Katnis">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="katnisButton:" destination="BV1-FR-VrT" eventType="touchUpInside" id="wEP-Dd-oni"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UgC-qt-5EH" firstAttribute="top" secondItem="F3o-YF-Wto" secondAttribute="bottom" constant="8" symbolic="YES" id="280-Xx-qoT"/>
+                            <constraint firstItem="1Mq-9S-V99" firstAttribute="baseline" secondItem="la0-sO-7op" secondAttribute="baseline" id="9qa-5u-a8k"/>
+                            <constraint firstItem="Ldw-am-Duk" firstAttribute="bottom" secondItem="1Mq-9S-V99" secondAttribute="bottom" constant="40" id="B77-sQ-lr6"/>
+                            <constraint firstItem="1Mq-9S-V99" firstAttribute="leading" secondItem="U3e-hq-lev" secondAttribute="trailing" constant="22" id="KJM-b7-3D6"/>
+                            <constraint firstItem="Ldw-am-Duk" firstAttribute="bottom" secondItem="U3e-hq-lev" secondAttribute="bottom" constant="40" id="MWK-OI-iSD"/>
+                            <constraint firstItem="Ldw-am-Duk" firstAttribute="bottom" secondItem="la0-sO-7op" secondAttribute="bottom" constant="40" id="Py8-8r-siv"/>
+                            <constraint firstItem="F3o-YF-Wto" firstAttribute="leading" secondItem="UgC-qt-5EH" secondAttribute="leading" id="Vpz-ZB-Y2X"/>
+                            <constraint firstItem="F3o-YF-Wto" firstAttribute="leading" secondItem="5bk-qv-lcH" secondAttribute="leadingMargin" id="aIG-5S-jgB"/>
+                            <constraint firstItem="Ldw-am-Duk" firstAttribute="trailing" secondItem="la0-sO-7op" secondAttribute="trailing" constant="414" id="ikk-NP-Rzn"/>
+                            <constraint firstItem="UgC-qt-5EH" firstAttribute="top" secondItem="U3e-hq-lev" secondAttribute="top" id="kOJ-P6-Z2E"/>
+                            <constraint firstItem="Ldw-am-Duk" firstAttribute="bottom" secondItem="UgC-qt-5EH" secondAttribute="bottom" constant="40" id="oSD-Ll-yty"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="F3o-YF-Wto" secondAttribute="trailingMargin" id="ugw-Qs-o8H"/>
+                            <constraint firstItem="la0-sO-7op" firstAttribute="leading" secondItem="1Mq-9S-V99" secondAttribute="trailing" constant="41" id="wWh-y6-ZUa"/>
+                            <constraint firstItem="U3e-hq-lev" firstAttribute="leading" secondItem="UgC-qt-5EH" secondAttribute="trailing" constant="41" id="xUT-rm-k5y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ldw-am-Duk"/>
+                    </view>
+                    <connections>
+                        <outlet property="scaleF1" destination="UgC-qt-5EH" id="4wV-tM-eYB"/>
+                        <outlet property="scaleF2" destination="U3e-hq-lev" id="aJY-tk-3ma"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
