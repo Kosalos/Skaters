@@ -22,7 +22,6 @@
 		1D03B235201908E5003F0597 /* reactor.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 1D03B22C201908E5003F0597 /* reactor.scnp */; };
 		1D03B236201908E5003F0597 /* bokeh.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D03B22D201908E5003F0597 /* bokeh.png */; };
 		1D03B237201908E5003F0597 /* boken.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 1D03B22E201908E5003F0597 /* boken.scnp */; };
-		1D03B238201908E5003F0597 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D03B22F201908E5003F0597 /* spark.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -157,7 +156,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D03B235201908E5003F0597 /* reactor.scnp in Resources */,
-				1D03B238201908E5003F0597 /* spark.png in Resources */,
 				1D03B21A20190883003F0597 /* LaunchScreen.storyboard in Resources */,
 				1D03B230201908E5003F0597 /* fire.scnp in Resources */,
 				1D03B237201908E5003F0597 /* boken.scnp in Resources */,
@@ -324,7 +322,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Harry.com.Skaters;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -339,7 +337,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Harry.com.Skaters;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

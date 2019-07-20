@@ -110,10 +110,11 @@ class Skater {
         let eBox = SCNBox(width:20, height:5, length:5, chamferRadius:0)
         let eNames = [ "fire.scnp","reactor.scnp","boken.scnp","smoke.scnp" ]
         for i in 0 ..< eNames.count {
-            emitter.append(SCNParticleSystem())
-            emitter[i] = SCNParticleSystem(named:eNames[i], inDirectory: nil)!
-            emitter[i].emitterShape = eBox
-            emitter[i].particleColor = eColor
+            let t = SCNParticleSystem(named:eNames[i], inDirectory: nil)!
+            t.emitterShape = eBox
+            t.particleColor = eColor
+            
+            emitter.append(t);
         }
         
         segmentsInit()
